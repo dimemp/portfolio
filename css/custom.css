@@ -22,9 +22,20 @@ body {
     padding: 0!important;
 }
 
-.navbar-brand,
+.navbar-nav .nav-link {
+    padding-right: 0!important;
+    padding-left: 0!important;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-brand {
+     border-bottom: 0!important;
+}
+
 .nav-link {
-    border-bottom: 0!important;
+    border-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -52,6 +63,7 @@ body {
 a {
     color: #000;
     border-bottom: 1px dotted #000;
+    transition: all 0.3s ease 0s;
 }
 
 a:hover,
@@ -62,6 +74,12 @@ a:active {
     border-bottom: 1px solid #000;
     text-decoration: none;
     outline: 0;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    border-bottom: 1px solid #fff;
 }
 
 /*--- Side Branding ---*/
@@ -91,13 +109,9 @@ a:active {
 
 @media (max-width: 768px) {
 
-    .default-name {
-        top: 230px;
-        left: -70px;  
-    }
-
+    .default-name,
     .moveable-name {
-        left: -70px;
+        display: none;
     }
 
 }
@@ -192,6 +206,10 @@ a:active {
 }
 
 @media (max-width: 768px) {
+
+    .media {
+        margin-bottom: 2rem;
+    }
 
     .counter-title {
         font-size: 1.8rem;
