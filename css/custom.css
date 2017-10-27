@@ -66,7 +66,7 @@ a:active {
 
 /*--- Side Branding ---*/
 
-.rotated-text {
+.default-name {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -75,22 +75,29 @@ a:active {
     z-index: 1;
     font-weight: 800;
     position: fixed;
-    top: 305px;
+    top: 320px;
     left: -60px;
 }
 
-#text-line {
-    margin-left: 5px;
-    margin-bottom: 3px;
-    width: 25px;
-    border-top: 1px solid #000;
-    display: inline-block;
+.moveable-name {
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    z-index: 1;
+    left: -60px;
 }
 
 @media (max-width: 768px) {
 
-    .rotated-text {
-        top: 220px;  
+    .default-name {
+        top: 230px;
+        left: -70px;  
+    }
+
+    .moveable-name {
+        left: -70px;
     }
 
 }
@@ -104,6 +111,7 @@ a:active {
     border-radius: 0;
     position: relative;
     color: #fff;
+    overflow: hidden;    
 }
 
 @media (max-width: 992px) {
@@ -125,9 +133,9 @@ a:active {
 }
 
 .welcome-section-image {
-    background: #0F3996 url(../content/img/curious.svg) no-repeat center center;
-    margin-top: 9.5rem;
-    margin-bottom: 9.5rem;
+    margin-top: 8rem;
+    width: 250px;
+    height: 250px;
 }
 
 .quote {
@@ -143,10 +151,10 @@ a:active {
     }
 
     .welcome-section-image {
-        margin-top: 0;
-        margin-bottom: 2rem;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 200px;
+        height: 200px;
     }
 
     .quote {
@@ -155,12 +163,58 @@ a:active {
 
 }
 
-/*--- Work ---*/
+/*--- About section ---*/
+
+#section-about {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #F7CE6C;
+    color: #000;
+}
+
+.about-details-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+}
+
+.counter-title {
+    font-size: 3rem;
+}
+
+.projects-number {
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+
+    .counter-title {
+        font-size: 1.8rem;
+    }
+
+    .projects-number {
+        font-size: 2.5rem;
+    }
+
+    #web-app-wrapper {
+        margin-top: 3rem;
+    }
+
+}
+
+/*--- Work section ---*/
 
 #section-work {
     background-color: #F8F8F4;
     color: #000;
     padding-bottom: 10rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .portfolio-details {
@@ -224,24 +278,24 @@ a:active {
 /*--- Contact ---*/
 
 #section-contact {
-    background-color: #FF6A43;
-    color: #5A1908;
+    background-color: #F7CE6C;
     padding-top: 7rem;
     padding-bottom: 7rem;
+    position: relative;
+    overflow: hidden;
+    color: #000;
 }
 
 #section-contact h2 {
     font-size: 2.5rem;
     line-height: 4rem;
-    font-weight: 800;
 }
 
 @media (max-width: 768px) {
 
     #section-contact h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 2.3rem;
-        font-weight: 800;
     }
 
 }

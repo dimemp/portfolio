@@ -1,0 +1,87 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{
+		fill:none;
+		stroke:#fff;
+		stroke-width:8;
+		stroke-miterlimit:10;
+	}
+
+	.st1{
+		fill:none;
+		stroke:#fff;
+		stroke-width:8;
+		stroke-miterlimit:10;
+	}
+
+	.st2{
+		fill:none;
+		stroke:#fff;
+		stroke-width:8;
+		stroke-miterlimit:10;
+	}
+
+	.st0 {
+			stroke-dasharray: 2900;
+  			stroke-dashoffset: 0;
+  			-webkit-animation: dash 4s linear forwards;
+  			-moz-animation: dash 4s linear forwards;
+  			animation: dash 4s linear forwards;
+		}
+
+		@keyframes dash {
+  			from {
+    			stroke-dashoffset: 2900;
+  			}
+  			to {
+    			stroke-dashoffset: 0;
+  			}
+		}
+
+	.st1 {
+			stroke-dasharray: 2900;
+  			stroke-dashoffset: 0;
+  			-webkit-animation: dash 6s 4s linear backwards;
+  			-moz-animation: dash 6s 4s linear backwards;
+  			animation: dash 6s 4s linear backwards;
+		}
+
+		@keyframes dash {
+  			from {
+    			stroke-dashoffset: 2900;
+  			}
+  			to {
+    			stroke-dashoffset: 0;
+  			}
+		}
+
+	.st2 {
+			stroke-dasharray: 2900;
+  			stroke-dashoffset: 0;
+  			-webkit-animation: dash 6s 6.4s linear backwards;
+  			-moz-animation: dash 6s 6.4s linear backwards;
+  			animation: dash 6s 6.4s linear backwards;
+		}
+
+		@keyframes dash {
+  			from {
+    			stroke-dashoffset: 2900;
+  			}
+  			to {
+    			stroke-dashoffset: 0;
+  			}
+		}
+</style>
+<circle id="XMLID_2_" class="st0" cx="500" cy="500" r="449"/>
+<g id="XMLID_3_">
+	<path id="XMLID_8_" class="st1" d="M647.244,425.552c0,96-80.5,174.5-179,174.5h-137.5v-349.5h137.5
+		C566.744,250.552,647.244,329.052,647.244,425.552z M637.244,425.552c0-91-76-165-169-165h-127.5v329.5h127.5
+		C561.244,590.052,637.244,516.052,637.244,425.552z"/>
+</g>
+<g id="XMLID_1_">
+	<path id="XMLID_5_" class="st2" d="M769.924,584.331c0,96-80.5,174.5-179,174.5h-137.5v-349.5h137.5
+		C689.424,409.331,769.924,487.831,769.924,584.331z M759.924,584.331c0-91-76-165-169-165h-127.5v329.5h127.5
+		C683.924,748.831,759.924,674.831,759.924,584.331z"/>
+</g>
+</svg>

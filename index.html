@@ -31,26 +31,28 @@
             </a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <div class="navbar-nav mr-5">
-                    <a class="nav-item nav-link active" href="#section-work">Work <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="#section-about">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="#section-work">Work</a>
                     <a class="nav-item nav-link active" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Side Brand -->
-    <div class="rotated-text">
-        <p>Dimitris Dimosiaris<span id="text-line"></span></p>
-    </div>
 
     <!-- Hero Section -->
-    <header class="jumbotron jumbotron-fluid welcome-section">
+    <section class="jumbotron jumbotron-fluid welcome-section">
         <div class="container">
+            <!-- Side Brand -->
+            <div class="rotated-text">
+                <img src="content/img/myname_white.svg" width="185px" height="24px" class="default-name" alt="personal name">
+            </div>
             <div class="row">
                 <div class="col-12 col-md-6 welcome-section-title">
                     <h1 class="title-welcome">Hi, my name is Dimitris and I am a web designer.</h1>
                 </div>
-                <div class="col-12 col-md-6 welcome-section-image text-center">
+                <div class="col-12 col-md-6 text-center">
+                    <img data-src="content/img/portfolio.svg" class="welcome-section-image" alt="personal design">
                 </div>
             </div>
             <div class="row">
@@ -61,11 +63,61 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+
+    <!-- About section -->
+    <section id="section-about">
+        <div class="container">
+            <!-- Side Brand -->
+            <div class="rotated-text">
+                <img src="content/img/myname_dark.svg" width="185px" height="24px" class="moveable-name" alt="personal name">
+            </div>
+             <div class="row about-details-wrapper">
+                <div class="col-12 col-md-4">
+                    <div class="media">
+                        <p class="about-text mr-3">01</p>
+                        <div class="media-body">
+                            <p class="about-text">I love working with people that have a vision and stong ethic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="media">
+                        <p class="about-text mr-3">02</p>
+                        <div class="media-body">
+                            <p class="about-text">I am located in Athens, Greece but I can work remotely.</p>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="media">
+                        <p class="about-text mr-3">03</p>
+                        <div class="media-body">
+                            <p class="about-text">I can deliver web design project in a short period of time.</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 col-md-6">
+                    <h2 class="counter-title">Websites</h2>
+                    <p class="mt-3 projects-number">19</p>
+                </div>
+                <div class="col-12 col-md-6" id="web-app-wrapper">
+                    <h2 class="counter-title">Web apps</h2>
+                    <p class="mt-3 projects-number">2</p>
+                </div>
+            </div>         
+        </div>
+    </section>
 
     <!-- Work portfolio projects -->
     <section class="pt-5" id="section-work">
         <div class="container">
+            <!-- Side Brand -->
+            <div class="rotated-text">
+                <img src="content/img/myname_dark.svg" width="185px" height="24px" class="moveable-name" alt="personal name">
+            </div>
             <div class="row">
                 <div class="col-md-5 col-12">
                     <div class="col-10 portfolio-details mx-auto">
@@ -75,12 +127,12 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-12 portfolio-image text-center">
-                    <img src="content/img/creative.png" alt="portfolio-creative-image">
+                    <img data-src="content/img/creative.png" alt="portfolio-creative-image">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-7 col-12 order-2 order-md-1 portfolio-image text-center">
-                    <img src="content/img/mindspace.png" alt="portfolio-mindspace-image">
+                    <img data-src="content/img/mindspace.png" alt="portfolio-mindspace-image">
                 </div>
                 <div class="col-md-5 col-12 order-1 order-md-2">
                     <div class="col-10 portfolio-details mx-auto">
@@ -99,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-12 portfolio-image text-center">
-                    <img src="content/img/partybuzz.png" alt="portfolio-partybuzz-image">
+                    <img data-src="content/img/partybuzz.png" alt="portfolio-partybuzz-image">
                 </div>
             </div>          
         </div>
@@ -108,6 +160,10 @@
     <!-- Contact section -->
     <section id="section-contact">
         <div class="container">
+            <!-- Side Brand -->
+            <div class="rotated-text">
+                <img src="content/img/myname_dark.svg" width="185px" height="24px" class="moveable-name" alt="personal name">
+            </div>
             <div class="row" id="contact">
                 <div class="col-12 mx-auto text-center">
                     <h2>Feel free to contact me at <a href="mailto:dimitrisdimosiaris@gmail.com">dimitrisdimosiaris@gmail.com</a> to learn more about me & my work or to discuss your project.</h2>
@@ -135,5 +191,8 @@
         </div>
     </footer>
 
+    <script src="js/jquerry.v2.1.4.min.js"></script>
+    <script src="js/slipScroll.js"></script>
+    <script src="js/lazyload.min.js"></script>
   </body>
 </html>
