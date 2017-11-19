@@ -4,7 +4,7 @@
 /*--- General ---*/
 
 body {
-    color: #292B2C;
+    color: #333333;
     font-family: 'Muli', sans-serif;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar-brand {
-     border-bottom: 0!important;
+    border-bottom: 0!important;
 }
 
 .nav-link {
@@ -84,34 +84,31 @@ a:active {
 
 /*--- Side Branding ---*/
 
-.default-name {
+.rotated-text {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    color: #000;
+    color: #FF3366;
     z-index: 1;
     font-weight: 800;
     position: fixed;
-    top: 320px;
+    top: 305px;
     left: -60px;
 }
 
-.moveable-name {
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    z-index: 1;
-    left: -60px;
+#text-line {
+    margin-left: 5px;
+    margin-bottom: 3px;
+    width: 25px;
+    border-top: 1px solid #FF3366;
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
 
-    .default-name,
-    .moveable-name {
-        display: none;
+    .rotated-text {
+        top: 220px;  
     }
 
 }
@@ -121,11 +118,13 @@ a:active {
 .welcome-section {
     margin-bottom: 0;
     margin-top: -6rem;
-    background-color: #0F3996;
+    background-color: #00009C;
     border-radius: 0;
-    position: relative;
     color: #fff;
-    overflow: hidden;    
+}
+
+#title-color {
+    color: #FF3366;
 }
 
 @media (max-width: 992px) {
@@ -182,10 +181,7 @@ a:active {
 #section-about {
     padding-top: 6rem;
     padding-bottom: 6rem;
-    position: relative;
-    overflow: hidden;
-    background-color: #F7CE6C;
-    color: #000;
+    background-color: #F5F5F5;
 }
 
 .about-details-wrapper {
@@ -212,6 +208,10 @@ a:active {
 
 @media (max-width: 768px) {
 
+    .about-details-wrapper {
+        padding: 0 1rem 0 1rem;
+    }
+
     .media {
         margin-bottom: 2rem;
     }
@@ -233,11 +233,7 @@ a:active {
 /*--- Work section ---*/
 
 #section-work {
-    background-color: #F8F8F4;
-    color: #000;
     padding-bottom: 10rem;
-    position: relative;
-    overflow: hidden;
 }
 
 .portfolio-details {
@@ -301,17 +297,28 @@ a:active {
 /*--- Contact ---*/
 
 #section-contact {
-    background-color: #F7CE6C;
+    background-color: #00009C;
     padding-top: 7rem;
     padding-bottom: 7rem;
-    position: relative;
-    overflow: hidden;
-    color: #000;
+    color: #fff;
 }
 
 #section-contact h2 {
     font-size: 2.5rem;
     line-height: 4rem;
+}
+
+#mail-adress {
+    color: #FF3366;
+    border-bottom-color: #FF3366;
+}
+
+#mail-adress:hover,
+#mail-adress:visited,
+#mail-adress:focus,
+#mail-adress:active {
+    color: #FE0040;
+    border-bottom-color: #FE0040;
 }
 
 @media (max-width: 768px) {
@@ -328,8 +335,7 @@ a:active {
 .section-footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #000;
-    color: #9d9d9d;
+    background-color: #F5F5F5;
 }
 
 .footer-copyrights {
@@ -341,9 +347,10 @@ a:active {
 }
 
 .footer-social a {
-    color: #9d9d9d;
     font-size: 1.4rem;
     margin-right: 1rem;
+    color: #333333;
+    border-bottom: none;
 }
 
 .footer-social a:hover,
@@ -351,7 +358,7 @@ a:active {
 .footer-social a:active,
 .footer-social a:focus {
     text-decoration: none;
-    color: #fff;
+    color: #9d9d9d;
 }
 
 @media (max-width: 576px) {
