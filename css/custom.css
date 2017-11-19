@@ -61,17 +61,17 @@ body {
 }
 
 a {
-    color: #000;
-    border-bottom: 1px dotted #000;
+    color: #fe5f55;
+    border-bottom: 1px dotted #fe5f55;
+    font-weight: 800;
     transition: all 0.3s ease 0s;
 }
 
 a:hover,
-a:visited,
 a:focus,
 a:active {
-    color: #000;
-    border-bottom: 1px solid #000;
+    color: #EA372E;
+    border-bottom: 1px solid #EA372E;
     text-decoration: none;
     outline: 0;
 }
@@ -89,7 +89,7 @@ a:active {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    color: #FF3366;
+    color: #fe5f55;
     z-index: 1;
     font-weight: 800;
     position: fixed;
@@ -101,7 +101,7 @@ a:active {
     margin-left: 5px;
     margin-bottom: 3px;
     width: 25px;
-    border-top: 1px solid #FF3366;
+    border-top: 1px solid #fe5f55;
     display: inline-block;
 }
 
@@ -124,7 +124,7 @@ a:active {
 }
 
 #title-color {
-    color: #FF3366;
+    color: #fe5f55;
 }
 
 @media (max-width: 992px) {
@@ -308,19 +308,6 @@ a:active {
     line-height: 4rem;
 }
 
-#mail-adress {
-    color: #FF3366;
-    border-bottom-color: #FF3366;
-}
-
-#mail-adress:hover,
-#mail-adress:visited,
-#mail-adress:focus,
-#mail-adress:active {
-    color: #FE0040;
-    border-bottom-color: #FE0040;
-}
-
 @media (max-width: 768px) {
 
     #section-contact h2 {
@@ -354,7 +341,6 @@ a:active {
 }
 
 .footer-social a:hover,
-.footer-social a:visited,
 .footer-social a:active,
 .footer-social a:focus {
     text-decoration: none;
