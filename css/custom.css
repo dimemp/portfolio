@@ -336,7 +336,8 @@ a:active {
 .section-footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #F5F5F5;
+    background-color: #0C022F;
+    color: #6E7076;
 }
 
 .footer-copyrights {
@@ -350,7 +351,7 @@ a:active {
 .footer-social a {
     font-size: 1.4rem;
     margin-right: 1rem;
-    color: #333333;
+    color: #6E7076;
     border-bottom: none;
 }
 
